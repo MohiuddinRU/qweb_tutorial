@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="qweb_tutorials.someTemplate">
+        <div class="alert alert-primary">
+            <h3>This is the main template</h3>
+        </div>
+        <t t-foreach="someList" t-as="l" t-key="l">
+            <span t-out="l"/>
+            <br/>
+        </t>
+        <button t-on-click="increaseCounter">
+            +
+        </button>
+        <h3>
+            <span t-out="state.counter"/>
+        </h3>
+    </t>
+</templates>
